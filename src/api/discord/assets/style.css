@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(65, 79, 237);
+    color: #333;
+    font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial,
+        sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(241, 180, 12);
+    border-color: rgb(241, 180, 12);
+    border: 5px solid rgb(241, 96, 12);
+    border-left: 0px solid rgb(241, 96, 12);
+    border-radius: 0 1rem 1rem 0;
+    font-size: 5vw;
+}
+
+button i {
+    color: #fff;
+    font-size: 5vw;
+}
+
+input {
+    border: 5px solid rgb(82, 19, 165);
+    background-color: seashell;
+    border-radius: 1rem 0 0 1rem;
+    border-right: none;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.card {
+    padding: 8% 5%;
+    background-color: rgb(128, 214, 240);
+    border-radius: 2rem;
+    border: 1px solid rgb(10, 11, 53);
+}
+
+#success {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: rgb(10, 11, 53);
+    width: 100%;
+}

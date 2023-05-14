@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/me/discord/stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css"
+            integrity="sha512-r9kUVFtJ0e+8WIL8sjTUlHGbTLwlOClXhVqGgu4sb7ILdkBvM2uI+n/Fz3FN8u3VqJX7l9HLiXqXxkx2mZpkvQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script
+            src="https://kit.fontawesome.com/37863661ee.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="card">
+                <div>
+                    <input
+                        type="text"
+                        value="..."
+                        id="inputField"
+                        disabled="true"
+                    /><button onclick="copyText()">
+                        <i class="far fa-clipboard"></i></button
+                    ><br /><input
+                        type="text"
+                        value=" "
+                        id="success"
+                        disabled="true"
+                    />
+                </div>
+            </div>
+            <script>
+                window
+                    .fetch('/socials')
+                    .then(function (response) {
+                        return response.json()
+                    })
+                    .then(function (data) {
+                        let inputValue = document.getElementById('inputField')
+                        inputValue.value = data.discord
+                        console.log(data.discord)
+                    })
+                    .catch(function () {
+                        console.log('Booo')
+                    })
+            </script>
+        </div>
+
+        <script type="text/javascript">
+            function copyText() {
+                let input = document.getElementById('inputField')
+                input.select()
+                input.setSelectionRange(0, 99999)
+                navigator.clipboard.writeText(input.value)
+                let inputValue = document.getElementById('success')
+                inputValue.value = 'Text copied!'
+            }
+        </script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/fontawesome.min.js"
+            integrity="sha512-vF2g7ozd8M2AA8re3eCrfJT2vvrOmIbW9JhodInQHN5Xjg6ec6nJpMJQcwuXm+aOhQze+CrM2rFQLftMtQA+bA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>

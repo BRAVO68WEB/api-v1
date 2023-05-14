@@ -1,0 +1,137 @@
+{
+    "/me": {
+        "/csgo": {
+            "/me": "CSGO Userdata",
+            "/maps": "CSGO Stats per Map",
+            "/weapons": "CSGO Stats per Weapon"
+        },
+        "/discord": {
+            "/": "Discord Username",
+            "/activity": "Discord active Activity status Data",
+            "/banner": "Discord live Status Activity"
+        },
+        "/docs": "Docs for API",
+        "/github": {
+            "/userdata": "Github User Stats",
+            "/orgs": "Github Orgs I belong to",
+            "/repos": "Github Public Repos",
+            "/banner": {
+                "/streaks": "Current Github Commit Streak",
+                "/trophy": "Github Trophy Stats",
+                "/stats": "Github Stats",
+                "/topLang": "Top Languages",
+                "/wakatime": "Wakatime Stats"
+            }
+        },
+        "/gitlab": {
+            "/userData": "Gitlab User Data",
+            "/userRepos": "Gitlab Public Repos"
+        },
+        "/hashnode": {
+            "/me": "About Hashnode Blogs"
+        },
+        "/instagram": {
+            "/profile": "Insta Profile",
+            "/postFeeds": "Insta Feeds"
+        },
+        "/lastfm": {
+            "/current": "Info about Song current Listening to (If Any)",
+            "/top": "Top 10 Song Played",
+            "/loved": "Songs marked as Loved",
+            "/user": "LastFM Userdata"
+        },
+        "/osu": {
+            "/user": "Osu! user stats",
+            "/recent": "Recently Played BeatMaps",
+            "/bestScores": "Osu! High Scores",
+            "/beatmap": {
+                "/:<beatmap>": "BeatMaps ID"
+            }
+        },
+        "/rocket-league": {
+            "/me": "Rocket League Userdata",
+            "/playerHistory": "Recent Match History",
+            "/rating": "Rank Rating"
+        },
+        "/spotify": {
+            "/myTopSongs": "Top 10 Tracks played by me on Spotify",
+            "/following": "Spotify following",
+            "/myPlaylists": "All Playlist by me",
+            "/myLibrary": "Recently Liked 20 Tracks",
+            "/getCurrentlyPlaying": "Now Playing on Spotify"
+        },
+        "/vscode": "VSCode Extentions Stats",
+        "/r6s": {
+            "/me": "R6S Userdata",
+            "/stats": "R6S Stats",
+            "/weapons": "R6S Stats per Weapon"
+        }
+    },
+    "/api": {
+        "/auth": {
+            "/req?email=<you-email@domain.tdl>": "User Registration"
+        },
+        "/public": {
+            "/generate-password": "Prefect Password Generator",
+            "/roll-a-die": "Roll Up a Die for you",
+            "/toss-a-coin": "Tosses a Die for you",
+            "/cat": "Random Cat Image",
+            "/catgirl": "Random Anime Cat Girl Image"
+        },
+        "/private": {
+            "/nhenati": "W.I.P.",
+            "/yt": {
+                "/video/:urlId": "Get Youtube Video JSON data",
+                "/channel/:channelId": "Get Youtube Channel JSON data",
+                "/playlist/:playlistId": "Get Youtube Playlist JSON data",
+                "/playlist/:playlistId/items": "Get Youtube Playlist's item JSON data",
+                "/convertSpotify/:trackID": "Get youtube equivalent from Spotify",
+                "/convertSpotify/:trackID/open": "Open youtube equivalent from Spotify"
+            },
+            "/mal": {
+                "/anime/:malId": "Get MAL Anime JSON data",
+                "/anime/search?name=": "Search Anime by Name",
+                "/manga/:malId": "Get MAL Manga JSON data",
+                "/manga/search?name=": "Search Manga by Name",
+                "/anime/season/:year/:season": "Get Anime by Season",
+                "/userAnimelist/:username": "Get MAL User AnimeList as JSON data"
+            },
+            "/todo": "beta",
+            "/osu": {
+                "/user/:username": "Get Osu! User JSON data",
+                "/recent/:username": "Get Osu! Recent Beatmaps as JSON data",
+                "/bestScores/:username": "Get Osu! Best Scores as JSON data",
+                "/beatmap/:mapid/:username": "Get Osu! Beatmap for particular map as JSON data"
+            },
+            "/spotify": {
+                "/track/:query": "Get Spotify Track JSON data",
+                "/search/:query/track": "Search Spotify Track by Name",
+                "/search/:query/artist": "Search Spotify Artist by Name",
+                "/artist/:query": "Get Spotify Artist JSON data"
+            },
+            "/screenshot": {
+                "?url=<url>": "Get Screenshot from URL"
+            },
+            "/files": {
+                "/": "List all publically uploaded files",
+                "/:fileId": "Get file by ID",
+                "/myFiles": "List all files uploaded by you",
+                "/file": "Upload File [POST] {private,about}",
+                "/image": "Upload image and Compress to webp [POST] {private,about}"
+            },
+            "/url-minify": "beta",
+            "/mc": {
+                "/status": {
+                    "/:ip/:port": "Get Server Stats with IP and Port",
+                    "/:serverUrl": "Get Server Stats with Server URL"
+                },
+                "/banner": "W.I.P"
+            },
+            "/ipinfo": "Docs Coming Soon",
+            "/gogoanime": "Docs Coming Soon",
+            "/olib": "Docs Coming Soon"
+        },
+        "/ask": "Ask any question and get answers"
+    },
+    "/contactme": "Send me a Meassage"
+}

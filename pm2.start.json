@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "b68-api",
+            "script": "npm",
+            "args": "run-script prod"
+        }
+    ]
+}
